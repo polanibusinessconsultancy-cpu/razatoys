@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 54" width="220" height="54" fill="none" role="img" aria-label="RazaToys — Small Toys, Big Smiles">
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#17191F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Teddy Bear Badge Icon (Left) -->
+  <g transform="translate(4, 3)" filter="url(#softShadow)">
+    <!-- Outer Badge Ring -->
+    <circle cx="24" cy="24" r="23" fill="#17191F"/>
+    <circle cx="24" cy="24" r="21.5" fill="#FFBD27"/>
+    <circle cx="24" cy="24" r="19.5" fill="#FFFDF8"/>
+
+    <!-- Teddy Ears -->
+    <circle cx="14" cy="14" r="7" fill="#E28743"/>
+    <circle cx="14" cy="14" r="4" fill="#FCE7F3"/>
+    <circle cx="34" cy="14" r="7" fill="#E28743"/>
+    <circle cx="34" cy="14" r="4" fill="#FCE7F3"/>
+
+    <!-- Teddy Head -->
+    <circle cx="24" cy="25" r="14.5" fill="#E28743"/>
+
+    <!-- Cheerful Cheeks -->
+    <circle cx="15.5" cy="27" r="3" fill="#F472B6" opacity="0.45"/>
+    <circle cx="32.5" cy="27" r="3" fill="#F472B6" opacity="0.45"/>
+
+    <!-- Muzzle / Snout -->
+    <ellipse cx="24" cy="28.5" rx="6.5" ry="5.2" fill="#FFF7EA"/>
+    <!-- Nose -->
+    <ellipse cx="24" cy="26.5" rx="2.4" ry="1.8" fill="#17191F"/>
+    <!-- Smiling Mouth -->
+    <path d="M21.5 29 Q24 32.5 26.5 29" stroke="#17191F" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+
+    <!-- Sparkly Eyes with Highlights -->
+    <circle cx="18.5" cy="22" r="2.2" fill="#17191F"/>
+    <circle cx="17.7" cy="21.2" r="0.8" fill="#FFFFFF"/>
+    <circle cx="29.5" cy="22" r="2.2" fill="#17191F"/>
+    <circle cx="28.7" cy="21.2" r="0.8" fill="#FFFFFF"/>
+
+    <!-- Cheerful Bow Tie -->
+    <path d="M20.5 37.5 L24 39.5 L20.5 41.5 Z" fill="#F35B9B"/>
+    <path d="M27.5 37.5 L24 39.5 L27.5 41.5 Z" fill="#F35B9B"/>
+    <circle cx="24" cy="39.5" r="1.6" fill="#FFBD27"/>
+  </g>
+
+  <!-- Typography: RazaToys (Right) -->
+  <g transform="translate(56, 4)">
+    <!-- "Raza" in playful soft black -->
+    <text x="0" y="27" font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#17191F" letter-spacing="-0.02em">Raza</text>
+    
+    <!-- "Toys" in hot candy pink -->
+    <text x="61" y="27" font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="28" fill="#F35B9B" letter-spacing="-0.02em">Toys</text>
+
+    <!-- Tagline: Small Toys, Big Smiles -->
+    <g transform="translate(2, 43)">
+      <!-- Sunshine underlines under tagline -->
+      <path d="M-1 3 Q22 6 46 3" stroke="#FFBD27" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M54 3 Q82 6 112 3" stroke="#FFBD27" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+      <text x="0" y="0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#279FE8" letter-spacing="0.01em">Small Toys</text>
+      <text x="56" y="0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5" fill="#F35B9B" letter-spacing="0.01em">Big Smiles</text>
+    </g>
+  </g>
+</svg>

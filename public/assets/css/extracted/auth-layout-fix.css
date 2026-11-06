@@ -1,0 +1,101 @@
+/**
+ * Auth Pages Layout Fix
+ * Remove sidebar/navbar spacing on signin/signup pages
+ */
+
+/* Check if we're on auth pages and remove the sidenav spacing */
+body.auth-page {
+    --padding-left: 0 !important;
+}
+
+/* Override g-sidenav-show for auth pages */
+body.auth-page.g-sidenav-show {
+    padding-left: 0 !important;
+}
+
+/* Ensure main content takes full width on auth pages */
+body.auth-page .main-content {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Remove navbar space */
+body.auth-page .navbar {
+    display: none !important;
+}
+
+/* Remove sidebar space */
+body.auth-page .sidenav {
+    display: none !important;
+}
+
+/* Full height for auth pages */
+body.auth-page {
+    min-height: 100vh;
+}
+
+/* Page header full width - Remove top margin/padding completely */
+body.auth-page .page-header {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Container full width */
+body.auth-page .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Remove gap from sticky container */
+body.auth-page .container.position-sticky {
+    display: none !important;
+}
+
+/* Ensure main section has no gap */
+body.auth-page main.main-content section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Remove all margins from form column */
+body.auth-page .col-md-4,
+body.auth-page .col-xl-4,
+body.auth-page .col-md-6 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Remove row margins */
+body.auth-page .row {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Card plain no margin */
+body.auth-page .card.card-plain {
+    margin-top: 0 !important;
+}
+
+/* Override min-vh-100 only if on mobile or if needed, but don't force auto */
+body.auth-page .page-header.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+/* Ensure no space above page header */
+body.auth-page .page-header {
+    top: 0 !important;
+}
+
+/* Remove extra space from oblique image container */
+body.auth-page .oblique-image {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}

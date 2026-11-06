@@ -1,0 +1,435 @@
+/* ============================================
+   ONE STOP MART - SCOPED CART PAGE STYLESHEET (PHASE 5)
+   ============================================ */
+
+.one-stop-mart-storefront .osm-cart-page {
+    background-color: var(--color-bg);
+    padding: 30px 0 60px;
+}
+
+/* ============ SCOPED BREADCRUMB ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    margin-bottom: 24px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-breadcrumb a:hover {
+    color: var(--color-primary-dark);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-breadcrumb__sep {
+    color: var(--color-text-muted);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-breadcrumb__current {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* ============ SCOPED HEADER ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-heading {
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    color: var(--color-secondary);
+    margin-bottom: 30px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 380px);
+    gap: 32px;
+    align-items: start;
+}
+
+@media (max-width: 1099px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ============ SCOPED ITEMS PANEL ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-items-panel {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-xl);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 576px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-items-panel {
+        padding: 16px;
+    }
+}
+
+/* Header Row for Desktop Table styling */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-items-header {
+    display: grid;
+    grid-template-columns: minmax(240px, 2.2fr) minmax(90px, 0.8fr) minmax(130px, 1fr) minmax(100px, 0.9fr) 70px;
+    gap: 16px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-items-header {
+        display: none; /* Hide header row on mobile, stack as cards */
+    }
+}
+
+/* ============ SCOPED ITEMS LOOP ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-item {
+    display: grid;
+    grid-template-columns: minmax(240px, 2.2fr) minmax(90px, 0.8fr) minmax(130px, 1fr) minmax(100px, 0.9fr) 70px;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 20px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        background-color: var(--color-bg-light);
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius-lg);
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Scoped Cart Product info block */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-product {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: var(--border-radius-lg);
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    flex-shrink: 0;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-product-name {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+    line-height: 1.3;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-product-name a:hover {
+    color: var(--color-primary-dark);
+}
+
+/* Scoped Price formatting */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-price {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-price {
+        display: flex;
+        justify-content: space-between;
+    }
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-price::before {
+        content: "Price:";
+        font-weight: 700;
+        color: var(--color-secondary);
+    }
+}
+
+/* Scoped Quantity Controls */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-quantity {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-quantity {
+        display: flex;
+        justify-content: space-between;
+    }
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-quantity::before {
+        content: "Quantity:";
+        font-weight: 700;
+        color: var(--color-secondary);
+    }
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--color-bg-light);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-quantity-button {
+    background: none;
+    border: none;
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-quantity-button:hover:not(:disabled) {
+    background-color: var(--color-border);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-quantity-button:disabled {
+    color: var(--color-text-muted);
+    cursor: not-allowed;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-quantity-value {
+    width: 32px;
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+/* Scoped Line Subtotal */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-line-total {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-line-total {
+        display: flex;
+        justify-content: space-between;
+    }
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-line-total::before {
+        content: "Total:";
+        font-weight: 700;
+        color: var(--color-secondary);
+    }
+}
+
+/* Scoped Removal controls */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-remove {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .one-stop-mart-storefront .osm-cart-page .osm-cart-remove {
+        justify-content: flex-end;
+    }
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-remove-button {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-remove-button:hover:not(:disabled) {
+    color: var(--color-danger);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-remove-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ============ SCOPED ACTIONS ROW ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-continue {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-continue a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-continue a:hover {
+    color: var(--color-primary-dark);
+}
+
+/* ============ SCOPED SUMMARY CARD ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-summary {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-xl);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 24px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-summary__title {
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 12px;
+    margin: 0;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-summary-total {
+    border-top: 1px solid var(--color-border);
+    padding-top: 16px;
+    font-size: var(--font-size-md);
+    color: var(--color-secondary);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-summary-total strong {
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-summary-note {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    text-align: center;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-checkout-button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-checkout-button:hover:not(:disabled) {
+    background-color: var(--color-primary-dark);
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-checkout-button:disabled {
+    background-color: var(--color-text-muted);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ============ SCOPED EMPTY STATE ============ */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-empty {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-xl);
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: var(--shadow-sm);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-empty-icon {
+    width: 64px;
+    height: 64px;
+    color: var(--color-text-muted);
+    margin: 0 auto 20px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-empty-title {
+    font-size: var(--font-size-xl);
+    font-weight: 800;
+    color: var(--color-secondary);
+    margin-bottom: 8px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-empty-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-bottom: 24px;
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-empty .btn--primary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.one-stop-mart-storefront .osm-cart-page .osm-cart-empty .btn--primary:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-secondary);
+}
+
+/* Scoped loading state behaviors */
+.one-stop-mart-storefront .osm-cart-page .osm-cart-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}

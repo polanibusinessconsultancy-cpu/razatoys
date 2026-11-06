@@ -1,0 +1,47 @@
+/**
+ * Dynamic Styles CSP Fix
+ * Handles dynamic progress bars and modal display states
+ */
+
+/* Dynamic Progress Bar Base */
+.dynamic-progress-bar {
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Dynamic Modal Base */
+.dynamic-modal {
+    display: none;
+}
+
+.dynamic-modal[data-show="true"] {
+    display: block;
+}
+
+/* Progress Bar Animation */
+.dynamic-progress-bar.animated {
+    transition: width 0.6s ease-in-out;
+}
+
+/* Ensure progress bars are visible when initialized */
+.progress .dynamic-progress-bar[data-width] {
+    opacity: 1;
+}
+
+/* Loading state for progress bars */
+.dynamic-progress-bar.loading {
+    background: linear-gradient(90deg, 
+        rgba(255,255,255,0.2) 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        rgba(255,255,255,0.2) 50%, 
+        rgba(255,255,255,0.2) 75%, 
+        transparent 75%);
+    background-size: 20px 20px;
+    animation: progress-loading 1s linear infinite;
+}
+
+@keyframes progress-loading {
+    0% { background-position: 0 0; }
+    100% { background-position: 20px 0; }
+}

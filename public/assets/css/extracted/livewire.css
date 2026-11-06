@@ -1,0 +1,215 @@
+/* Livewire-specific styles */
+
+/* Livewire loading indicator */
+.livewire-loading {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom-left-radius: 0.25rem;
+}
+
+/* Livewire error message */
+.livewire-error {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.25rem;
+    color: #721c24;
+}
+
+/* Livewire dirty marker */
+.livewire-dirty {
+    border-color: #ffc107 !important;
+}
+
+/* Livewire file upload progress */
+.livewire-upload-progress {
+    height: 0.25rem;
+    background-color: #4299e1;
+    transition: width 0.3s;
+}
+
+/* Livewire file upload wrapper */
+.livewire-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Livewire file upload input */
+.livewire-upload-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/* Livewire file upload preview */
+.livewire-upload-preview {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 0.5rem;
+}
+
+/* Livewire file upload list */
+.livewire-upload-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Livewire file upload list item */
+.livewire-upload-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Livewire file upload list item name */
+.livewire-upload-list-item-name {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+/* Livewire file upload list item remove */
+.livewire-upload-list-item-remove {
+    cursor: pointer;
+    color: #e53e3e;
+}
+
+/* Livewire file upload list item progress */
+.livewire-upload-list-item-progress {
+    height: 0.25rem;
+    background-color: #4299e1;
+    transition: width 0.3s;
+}
+
+/* Livewire file upload list item error */
+.livewire-upload-list-item-error {
+    color: #e53e3e;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item success */
+.livewire-upload-list-item-success {
+    color: #48bb78;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item pending */
+.livewire-upload-list-item-pending {
+    color: #ed8936;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item uploading */
+.livewire-upload-list-item-uploading {
+    color: #4299e1;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item uploaded */
+.livewire-upload-list-item-uploaded {
+    color: #48bb78;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item failed */
+.livewire-upload-list-item-failed {
+    color: #e53e3e;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item canceled */
+.livewire-upload-list-item-canceled {
+    color: #718096;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item paused */
+.livewire-upload-list-item-paused {
+    color: #ed8936;
+    font-size: 0.75rem;
+}
+
+/* Livewire file upload list item progress */
+.livewire-upload-list-item-progress {
+    height: 0.25rem;
+    background-color: #4299e1;
+    transition: width 0.3s;
+}
+
+/* Livewire file upload list item progress bar */
+.livewire-upload-list-item-progress-bar {
+    height: 100%;
+    background-color: #48bb78;
+    transition: width 0.3s;
+}
+
+/* Livewire file upload list item progress text */
+.livewire-upload-list-item-progress-text {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress percentage */
+.livewire-upload-list-item-progress-percentage {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress speed */
+.livewire-upload-list-item-progress-speed {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress time */
+.livewire-upload-list-item-progress-time {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress size */
+.livewire-upload-list-item-progress-size {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress uploaded */
+.livewire-upload-list-item-progress-uploaded {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress total */
+.livewire-upload-list-item-progress-total {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress remaining */
+.livewire-upload-list-item-progress-remaining {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Livewire file upload list item progress eta */
+.livewire-upload-list-item-progress-eta {
+    font-size: 0.75rem;
+    color: #718096;
+}

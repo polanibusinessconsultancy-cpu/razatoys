@@ -1,0 +1,137 @@
+/* Auth pages styling */
+
+/* Blue theme to match background image */
+.text-primary, .btn-primary, .bg-primary, .bg-gradient-primary {
+    color: #4285f4 !important;
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%) !important;
+    border-color: #4285f4 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-outline-primary {
+    color: #4285f4 !important;
+    border-color: #4285f4 !important;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%) !important;
+    color: white !important;
+}
+
+/* Ensure form controls have proper styling */
+.form-control:focus {
+    border-color: #4285f4 !important;
+    box-shadow: 0 0 0 0.2rem rgba(66, 133, 244, 0.25) !important;
+}
+
+/* Icon colors */
+.auth-icon-primary {
+    color: #4285f4;
+}
+
+.auth-icon-secondary {
+    color: #6c757d;
+}
+
+/* Form elements styling */
+.auth-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    height: 50px;
+}
+
+.auth-input-password {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    padding-right: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.auth-password-toggle {
+    border: none !important;
+    background: transparent !important;
+    z-index: 100 !important;
+    width: 40px;
+    height: 40px;
+    cursor: pointer !important;
+    padding: 0;
+    position: absolute;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.auth-password-toggle:hover,
+.auth-password-toggle:focus,
+.auth-password-toggle:active {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.auth-password-toggle i {
+    pointer-events: none;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* CAPTCHA styles now consolidated in captcha.css */
+
+/* Auth buttons */
+.auth-submit-btn {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%);
+    border: none;
+}
+
+.auth-signup-btn {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%);
+    border: none;
+}
+
+/* Support contact link */
+.auth-support-link {
+    color: #667eea;
+}
+
+/* Background image styling */
+.auth-bg-image {
+    background-image: url('../../../assets/img/image-sign-in.jpg');
+}/* 
+Additional styles for the auth page */
+
+/* Oblique image styling */
+.oblique-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Blur effect for the text container */
+.blur {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* GitHub buttons styling fix */
+.github-button {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+/* Livewire specific styles */
+.livewire-loading {
+    display: none;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .oblique-image {
+        display: none;
+    }
+}

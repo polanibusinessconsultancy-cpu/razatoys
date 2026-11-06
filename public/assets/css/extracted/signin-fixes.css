@@ -1,0 +1,72 @@
+/* Additional CSS fixes for the signin page */
+
+/* Fix for the auth background image */
+.auth-bg-image {
+    background-image: url('../../../assets/img/image-sign-in.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fix for the blur effect */
+.blur {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Fix for the position absolute */
+.position-absolute.w-40.top-0.end-0.h-100 {
+    width: 40%;
+}
+
+.oblique-image.position-absolute.fixed-top.ms-auto.h-100.z-index-0.bg-cover.ms-n8 {
+    margin-left: -8rem;
+}
+
+/* Fix for auth form elements */
+.auth-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    height: 50px;
+}
+
+.auth-input-password {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    padding-right: 45px;
+    height: 50px;
+}
+
+.auth-password-toggle {
+    border: none;
+    background: transparent;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+/* CAPTCHA styles now consolidated in captcha.css */
+
+/* Fix for auth buttons */
+.auth-submit-btn {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%);
+    border: none;
+}
+
+.auth-signup-btn {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%);
+    border: none;
+}
+
+/* Fix for auth icons */
+.auth-icon-primary {
+    color: #4285f4;
+}
+
+.auth-icon-secondary {
+    color: #6c757d;
+}
+
+/* Fix for auth support link */
+.auth-support-link {
+    color: #667eea;
+}

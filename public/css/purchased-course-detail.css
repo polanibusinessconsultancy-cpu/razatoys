@@ -1,0 +1,29 @@
+/* Purchased Course Detail Styles */
+
+/* Lecture player section */
+.lecture-player-hidden {
+    display: none;
+}
+
+/* Navigation buttons */
+.nav-btn-hidden {
+    display: none;
+}
+
+/* Attachment styles */
+.attachment-thumbnail-img {
+    max-height: 150px;
+}
+
+.attachment-card {
+    width: 100px;
+}
+
+.attachment-card-wide {
+    width: 180px;
+}
+
+.attachment-img {
+    height: 80px;
+    object-fit: cover;
+}

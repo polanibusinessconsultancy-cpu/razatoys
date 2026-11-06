@@ -1,0 +1,204 @@
+/* Livewire Dynamic Styles */
+
+/* Livewire loading states */
+[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {
+    display: none;
+}
+
+[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {
+    display: none;
+}
+
+[wire\:offline] {
+    display: none;
+}
+
+[wire\:dirty]:not(textarea):not(input):not(select) {
+    display: inline-block;
+    position: relative;
+}
+
+[wire\:dirty]:not(textarea):not(input):not(select)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #f56565;
+    transform: translate(-50%, 50%);
+}
+
+[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {
+    display: none;
+}
+
+[wire\:offline] {
+    display: none;
+}
+
+[wire\:dirty]:not(textarea):not(input):not(select) {
+    display: inline-block;
+    position: relative;
+}
+
+[wire\:dirty]:not(textarea):not(input):not(select)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #f56565;
+    transform: translate(-50%, 50%);
+}
+
+/* Livewire specific animations */
+.wire-loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 9999;
+    background-color: #4285f4;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.wire-loading-bar.is-loading {
+    opacity: 1;
+    transform: scaleX(0.7);
+}
+
+.wire-loading-bar.is-finishing {
+    transform: scaleX(1);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease 0.3s;
+}
+
+/* Livewire error styles */
+.wire-error {
+    border: 1px solid #f56565;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    color: #f56565;
+    background-color: #fff5f5;
+    font-size: 0.875rem;
+}
+
+/* Livewire validation styles */
+.wire-validation-error {
+    color: #f56565;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Livewire pagination styles */
+.wire-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.wire-pagination-links {
+    display: flex;
+    align-items: center;
+}
+
+.wire-pagination-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+    background-color: #f7fafc;
+    color: #4a5568;
+    text-decoration: none;
+}
+
+.wire-pagination-link.active {
+    background-color: #4285f4;
+    color: white;
+}
+
+.wire-pagination-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Livewire sorting styles */
+.wire-sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.wire-sortable-indicator {
+    display: inline-block;
+    margin-left: 0.25rem;
+    transition: transform 0.15s ease;
+}
+
+.wire-sortable-indicator.asc {
+    transform: rotate(180deg);
+}
+
+/* Livewire file upload styles */
+.wire-upload-progress {
+    height: 0.25rem;
+    background-color: #e2e8f0;
+    border-radius: 0.125rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.wire-upload-progress-bar {
+    height: 100%;
+    background-color: #4285f4;
+    transition: width 0.3s ease;
+}
+
+.wire-upload-preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.wire-upload-preview-item {
+    position: relative;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wire-upload-preview-item img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.wire-upload-preview-remove {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #f56565;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    cursor: pointer;
+}

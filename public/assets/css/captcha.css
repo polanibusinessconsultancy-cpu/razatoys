@@ -1,0 +1,115 @@
+/**
+ * Simple CAPTCHA Styles - Enhanced UI
+ */
+
+#captcha-display {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    min-width: 120px;
+    width: auto;
+    max-width: 180px;
+    height: 45px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    background-color: #f0f0f0;
+    font-family: 'Arial', 'Courier New', monospace;
+    user-select: none;
+    -webkit-user-select: none;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
+    color: #333;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+#captcha-display:hover {
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    border-color: #999;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+#captcha-input {
+    display: inline-flex !important;
+    width: auto !important; /* override .form-control width:100% */
+    flex: 0 0 180px !important;
+    min-width: 160px;
+    max-width: 200px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    height: 45px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+#captcha-input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.captcha-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap !important;
+    width: 100%;
+}
+
+.captcha-container button {
+    padding: 0;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+}
+
+.captcha-container button:hover {
+    background-color: #e8e8e8;
+    border-color: #999;
+    transform: scale(1.05);
+}
+
+.captcha-container button:active {
+    transform: scale(0.95);
+}
+
+.captcha-container button i {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Wrap only on small screens; go full-width input when wrapping */
+@media (max-width: 575.98px) {
+    .captcha-container {
+        flex-wrap: wrap !important;
+    }
+
+    #captcha-input {
+        display: block !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+}

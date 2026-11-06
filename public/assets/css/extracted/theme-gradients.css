@@ -1,0 +1,68 @@
+/* Theme gradient classes for sidebar colors */
+.bg-gradient-primary {
+    background-image: linear-gradient(310deg, #774dd3 0%, #a47dfa 100%);
+    background-color: #774dd3;
+}
+
+.bg-gradient-info {
+    background-image: linear-gradient(310deg, #55a6f8 0%, #8ac9ff 100%);
+    background-color: #55a6f8;
+}
+
+.bg-gradient-success {
+    background-image: linear-gradient(310deg, #67c23a 0%, #8be461 100%);
+    background-color: #67c23a;
+}
+
+.bg-gradient-warning {
+    background-image: linear-gradient(310deg, #f19937 0%, #ffb571 100%);
+    background-color: #f19937;
+}
+
+.bg-gradient-danger {
+    background-image: linear-gradient(310deg, #ea4e3d 0%, #ff8b7b 100%);
+    background-color: #ea4e3d;
+}
+
+.bg-gradient-dark {
+    background-image: linear-gradient(310deg, #1e293b 0%, #3c4d6b 100%);
+    background-color: #1e293b;
+}
+
+/* Text color classes for sidebar card icon */
+.text-primary {
+    color: #774dd3 !important;
+}
+
+.text-info {
+    color: #55a6f8 !important;
+}
+
+.text-success {
+    color: #67c23a !important;
+}
+
+.text-warning {
+    color: #f19937 !important;
+}
+
+.text-danger {
+    color: #ea4e3d !important;
+}
+
+.text-dark {
+    color: #1e293b !important;
+}
+
+/* Sidebar type classes */
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.bg-slate-900 {
+    background-color: #0f172a !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}

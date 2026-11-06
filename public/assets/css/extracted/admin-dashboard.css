@@ -1,0 +1,77 @@
+/* Admin Dashboard Styles */
+
+/* Card styles */
+.card-stats {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-stats:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom color for purple cards */
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+/* Card border styles */
+.border-left-primary {
+    border-left: 4px solid #4e73df;
+}
+
+.border-left-success {
+    border-left: 4px solid #1cc88a;
+}
+
+.border-left-info {
+    border-left: 4px solid #36b9cc;
+}
+
+.border-left-warning {
+    border-left: 4px solid #f6c23e;
+}
+
+.border-left-danger {
+    border-left: 4px solid #e74a3b;
+}
+
+.border-left-secondary {
+    border-left: 4px solid #858796;
+}
+
+.border-left-purple {
+    border-left: 4px solid #6f42c1;
+}
+
+/* Icon styles */
+.text-white-300 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Quick links section */
+.quick-links-btn {
+    transition: all 0.2s ease;
+}
+
+.quick-links-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats card footer */
+.card-footer.bg-transparent {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Stats numbers */
+.stats-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Stats labels */
+.stats-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

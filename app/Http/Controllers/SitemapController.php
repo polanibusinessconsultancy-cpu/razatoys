@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Course;
+use App\Models\Lecture;
+use Illuminate\Support\Str;
+
+class SitemapController extends Controller
+{
+    public function index()
+    {
+        $courses = Course::where('is_storefront_visible', true)->get();
+        
+        $lectures = Lecture::whereHas('course', function($q) {
+            $q->where('is_storefront_visible', true);
+        })->with('course')->get();
+
+
+        return response()->view('sitemap.index', [
+            'courses' => $courses,
+            'lectures' => $lectures,
+        ])->header('Content-Type', 'text/xml');
+    }
+}

@@ -1,0 +1,112 @@
+/* Account signin page specific styles */
+
+/* Blue theme to match background image */
+.text-primary, .btn-primary, .bg-primary, .bg-gradient-primary {
+    color: #4285f4 !important;
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%) !important;
+    border-color: #4285f4 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-outline-primary {
+    color: #4285f4 !important;
+    border-color: #4285f4 !important;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%) !important;
+    color: white !important;
+}
+
+/* Ensure form controls have proper styling */
+.form-control:focus {
+    border-color: #4285f4 !important;
+    box-shadow: 0 0 0 0.2rem rgba(66, 133, 244, 0.25) !important;
+}
+
+/* Icon colors */
+.auth-icon-primary {
+    color: #4285f4;
+}
+
+.auth-icon-secondary {
+    color: #6c757d;
+}
+
+/* Form elements styling */
+.auth-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    height: 50px;
+}
+
+.auth-input-password {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    padding-right: 45px;
+    height: 50px;
+}
+
+.auth-password-toggle {
+    border: none;
+    background: transparent;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+/* CAPTCHA styles now consolidated in captcha.css */
+
+.auth-captcha-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    max-width: 150px;
+    height: 50px;
+}
+
+/* Auth buttons */
+.auth-submit-btn {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%);
+    border: none;
+}
+
+.auth-signup-btn {
+    background: linear-gradient(135deg, #4285f4 0%, #1976d2 100%);
+    border: none;
+}
+
+/* Support contact link */
+.auth-support-link {
+    color: #667eea;
+}
+
+/* Background image styling */
+.auth-bg-image {
+    background-image: url('../../../assets/img/image-sign-in.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Oblique image styling */
+.oblique-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Blur effect for the text container */
+.blur {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .oblique-image {
+        display: none;
+    }
+}

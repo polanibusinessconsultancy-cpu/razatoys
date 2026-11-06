@@ -1,0 +1,276 @@
+/**
+ * CLS (Cumulative Layout Shift) Fixes
+ * Prevents layout shifts by reserving space for elements that load dynamically
+ */
+
+/* ==========================================================================
+   Main Content Container - Reserve minimum height to prevent shifts
+   ========================================================================== */
+.main-content {
+    min-height: auto;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    /* Prevent layout recalculation */
+    transform: translateZ(0);
+}
+
+.main-content.position-relative.border-radius-lg {
+    min-height: auto;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    /* Force GPU layer to prevent repaints */
+    transform: translateZ(0);
+}
+
+/* Container fluid - ensure layout stability */
+.main-content>.container-fluid {
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   Hero Carousel - Fixed dimensions to prevent layout shifts
+   ========================================================================== */
+#heroCarousel {
+    min-height: 500px;
+    height: 500px;
+}
+
+#heroCarousel .carousel-inner {
+    min-height: 500px;
+    height: 500px;
+}
+
+#heroCarousel .carousel-item {
+    min-height: 500px;
+    height: 500px;
+}
+
+#heroCarousel .carousel-item>.bg-cover {
+    min-height: 500px;
+    height: 500px;
+}
+
+/* Responsive carousel heights */
+@media (max-width: 991.98px) {
+
+    #heroCarousel,
+    #heroCarousel .carousel-inner,
+    #heroCarousel .carousel-item,
+    #heroCarousel .carousel-item>.bg-cover {
+        min-height: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    #heroCarousel,
+    #heroCarousel .carousel-inner,
+    #heroCarousel .carousel-item,
+    #heroCarousel .carousel-item>.bg-cover {
+        min-height: 350px;
+        height: 350px;
+    }
+}
+
+/* ==========================================================================
+   Navbar Collapse - Prevent shifts during collapse animation
+   ========================================================================== */
+.navbar-collapse {
+    /* Prevent layout shifts during collapse/expand */
+    flex-shrink: 0;
+}
+
+/* On desktop, navbar should never collapse */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto !important;
+    }
+
+    #navbarNav {
+        display: flex !important;
+        flex-basis: auto !important;
+    }
+}
+
+/* Reserve space for mobile navbar when collapsed */
+@media (max-width: 991.98px) {
+    .navbar-collapse.collapse:not(.show) {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .navbar-collapse.collapsing {
+        height: auto;
+        transition: height 0.35s ease;
+    }
+}
+
+/* ==========================================================================
+   Input Group - Prevent shifts from search inputs
+   ========================================================================== */
+.input-group {
+    min-height: 38px;
+}
+
+.search-wrapper .input-group {
+    min-height: 44px;
+}
+
+/* ==========================================================================
+   Images - Always have width/height to prevent shifts
+   ========================================================================== */
+img:not([width]):not([height]) {
+    /* Add default aspect ratio for images without dimensions */
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+}
+
+/* Logo images - fixed size */
+.navbar-brand img,
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+}
+
+/* ==========================================================================
+   Font Loading - Prevent FOUT/FOIT
+   ========================================================================== */
+.fa,
+.fas,
+.far,
+.fab,
+.fal,
+.fad {
+    /* Reserve space for icons */
+    min-width: 1em;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Content contain for performance
+   ========================================================================== */
+/* Removed contain: layout from container-fluid as it can hide content */
+
+.card {
+    contain: style paint;
+}
+
+/* ==========================================================================
+   Hero Slides - Fixed dimensions and styling
+   ========================================================================== */
+.hero-slide {
+    min-height: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-slide-placeholder {
+    background-color: #1a1a2e;
+}
+
+.hero-cta-btn {
+    text-shadow: 0px 0px 8px #FFD700;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+@media (max-width: 991.98px) {
+    .hero-slide {
+        min-height: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-slide {
+        min-height: 350px;
+        height: 350px;
+    }
+}
+
+/* ==========================================================================
+   Livewire Components - Prevent shifts during hydration
+   ========================================================================== */
+/* Removed contain: layout from Livewire components as it hides content */
+
+/* Course cards grid - reserve minimum height only for course lists */
+.courseslist-container .container>.row,
+.courses-container .container>.row,
+#grid-view .row.g-3 {
+    min-height: 400px;
+}
+
+/* Course card skeleton - reserve space */
+.course-card {
+    min-height: 350px;
+}
+
+.course-image-container {
+    min-height: 160px;
+    height: 160px;
+    background-color: #f0f0f0;
+}
+
+/* Card body - reserve space */
+.course-card .card-body {
+    min-height: 190px;
+}
+
+/* ==========================================================================
+   Row containers - ensure proper layout flow
+   ========================================================================== */
+/* Removed contain: layout from .row as it hides content */
+
+/* Latest courses section */
+.row.mb-5 {
+    min-height: 550px;
+    /* Hero carousel container */
+}
+
+/* ==========================================================================
+   Images - Always reserve space
+   ========================================================================== */
+img[loading="lazy"] {
+    background-color: #f0f0f0;
+}
+
+.card-img-top {
+    aspect-ratio: 300 / 160;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+/* ==========================================================================
+   Prevent flash of unstyled Livewire content
+   ========================================================================== */
+[wire\:initial-data] {
+    visibility: visible !important;
+}
+
+/* Skeleton animation for loading states */
+@keyframes skeleton-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.skeleton-loading {
+    animation: skeleton-pulse 1.5s ease-in-out infinite;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+}

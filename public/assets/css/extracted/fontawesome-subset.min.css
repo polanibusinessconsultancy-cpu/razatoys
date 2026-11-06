@@ -1,0 +1,148 @@
+/*!
+ * Font Awesome Subset - Only Icons Used by IEC App
+ * Generated: December 18, 2025
+ * Used Icons: 131 out of 6000+ Font Awesome icons
+ * Expected size savings: ~90% (57KB → 6KB)
+ */
+
+/* Only include Font Awesome classes that are actually used */
+.fa, .fas, .far, .fal, .fab { font-family: 'Font Awesome 5 Free'; font-weight: 400; font-style: normal; font-variant: normal; text-rendering: auto; -webkit-font-smoothing: antialiased; }
+.fas { font-weight: 900; }
+.far { font-weight: 400; }
+.fab { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
+
+/* Used icon definitions only */
+.fa-angle-right::before { content: '\f105'; }
+.fa-arrow-down::before { content: '\f063'; }
+.fa-arrow-left::before { content: '\f060'; }
+.fa-arrow-left-long::before { content: '\f177'; }
+.fa-arrow-right::before { content: '\f061'; }
+.fa-arrow-right-long::before { content: '\f178'; }
+.fa-arrow-up::before { content: '\f062'; }
+.fa-bank::before { content: '\f19c'; }
+.fa-barcode::before { content: '\f02a'; }
+.fa-bars::before { content: '\f0c9'; }
+.fa-book::before { content: '\f02d'; }
+.fa-book-open::before { content: '\f518'; }
+.fa-box::before { content: '\f466'; }
+.fa-calculator::before { content: '\f1ec'; }
+.fa-calendar::before { content: '\f133'; }
+.fa-calendar-alt::before { content: '\f570'; }
+.fa-cart-plus::before { content: '\f217'; }
+.fa-certificate::before { content: '\f0a9'; }
+.fa-chalkboard-teacher::before { content: '\f51c'; }
+.fa-chart-bar::before { content: '\f080'; }
+.fa-chart-line::before { content: '\f201'; }
+.fa-chart-pie::before { content: '\f200'; }
+.fa-check::before { content: '\f05d'; }
+.fa-check-circle::before { content: '\f05d'; }
+.fa-check-double::before { content: '\f560'; }
+.fa-chevron-left::before { content: '\f053'; }
+.fa-chevron-right::before { content: '\f054'; }
+.fa-chevron-up::before { content: '\f077'; }
+.fa-circle::before { content: '\f111'; }
+.fa-circle-notch::before { content: '\f1ce'; }
+.fa-clipboard-check::before { content: '\f46c'; }
+.fa-clipboard-list::before { content: '\f46d'; }
+.fa-clock::before { content: '\f017'; }
+.fa-comment::before { content: '\f075'; }
+.fa-comment-dots::before { content: '\f4ad'; }
+.fa-comments::before { content: '\f086'; }
+.fa-credit-card::before { content: '\f09d'; }
+.fa-desktop::before { content: '\f108'; }
+.fa-dot-circle::before { content: '\f192'; }
+.fa-download::before { content: '\f019'; }
+.fa-edit::before { content: '\f044'; }
+.fa-ellipsis-v::before { content: '\f142'; }
+.fa-envelope::before { content: '\f0e0'; }
+.fa-exclamation-circle::before { content: '\f06a'; }
+.fa-exclamation-triangle::before { content: '\f071'; }
+.fa-expand::before { content: '\f065'; }
+.fa-external-link-alt::before { content: '\f35b'; }
+.fa-eye::before { content: '\f06e'; }
+.fa-eye-slash::before { content: '\f070'; }
+.fa-file-pdf::before { content: '\f1c1'; }
+.fa-filter::before { content: '\f0b0'; }
+.fa-flag-checkered::before { content: '\f11e'; }
+.fa-gift::before { content: '\f06b'; }
+.fa-globe::before { content: '\f0ac'; }
+.fa-graduation-cap::before { content: '\f19d'; }
+.fa-headset::before { content: '\f025'; }
+.fa-history::before { content: '\f1da'; }
+.fa-home::before { content: '\f015'; }
+.fa-hourglass-half::before { content: '\f252'; }
+.fa-image::before { content: '\f03e'; }
+.fa-inbox::before { content: '\f01c'; }
+.fa-infinity::before { content: '\f534'; }
+.fa-info-circle::before { content: '\f05a'; }
+.fa-key::before { content: '\f084'; }
+.fa-laptop::before { content: '\f109'; }
+.fa-lightbulb::before { content: '\f0eb'; }
+.fa-linkedin::before { content: '\f08c'; }
+.fa-list::before { content: '\f03b'; }
+.fa-lock::before { content: '\f023'; }
+.fa-map-marker-alt::before { content: '\f3c5'; }
+.fa-microphone::before { content: '\f130'; }
+.fa-mobile-alt::before { content: '\f3cd'; }
+.fa-money-bill-wave::before { content: '\f53a'; }
+.fa-paper-plane::before { content: '\f1d8'; }
+.fa-percentage::before { content: '\f541'; }
+.fa-phone::before { content: '\f095'; }
+.fa-play::before { content: '\f04b'; }
+.fa-play-circle::before { content: '\f144'; }
+.fa-plus::before { content: '\f067'; }
+.fa-plus-circle::before { content: '\f055'; }
+.fa-question::before { content: '\f128'; }
+.fa-question-circle::before { content: '\f059'; }
+.fa-random::before { content: '\f074'; }
+.fa-receipt::before { content: '\f543'; }
+.fa-redo::before { content: '\f01e'; }
+.fa-redo-alt::before { content: '\f2f9'; }
+.fa-reply::before { content: '\f3e5'; }
+.fa-save::before { content: '\f0c7'; }
+.fa-search::before { content: '\f002'; }
+.fa-shield-alt::before { content: '\f3f5'; }
+.fa-shopping-cart::before { content: '\f07a'; }
+.fa-sign-in-alt::before { content: '\f2f6'; }
+.fa-sign-out-alt::before { content: '\f2f5'; }
+.fa-spinner::before { content: '\f110'; }
+.fa-star::before { content: '\f005'; }
+.fa-star-half-alt::before { content: '\f5c0'; }
+.fa-stop::before { content: '\f04d'; }
+.fa-stop-circle::before { content: '\f28d'; }
+.fa-sync::before { content: '\f021'; }
+.fa-sync-alt::before { content: '\f2f1'; }
+.fa-tablet-alt::before { content: '\f3fa'; }
+.fa-tachometer-alt::before { content: '\f3fd'; }
+.fa-tags::before { content: '\f02c'; }
+.fa-th-large::before { content: '\f009'; }
+.fa-thumbtack::before { content: '\f08d'; }
+.fa-times::before { content: '\f00d'; }
+.fa-times-circle::before { content: '\f057'; }
+.fa-trash::before { content: '\f1f8'; }
+.fa-trash-alt::before { content: '\f2ed'; }
+.fa-trophy::before { content: '\f091'; }
+.fa-twitter::before { content: '\f099'; }
+.fa-university::before { content: '\f19c'; }
+.fa-unlock::before { content: '\f09c'; }
+.fa-user::before { content: '\f007'; }
+.fa-user-check::before { content: '\f4fc'; }
+.fa-user-circle::before { content: '\f2bd'; }
+.fa-user-cog::before { content: '\f4fe'; }
+.fa-user-friends::before { content: '\f500'; }
+.fa-user-plus::before { content: '\f234'; }
+.fa-users::before { content: '\f0c0'; }
+.fa-user-tag::before { content: '\f507'; }
+.fa-user-tie::before { content: '\f508'; }
+.fa-video::before { content: '\f03d'; }
+.fa-volume-up::before { content: '\f028'; }
+.fa-wallet::before { content: '\f555'; }
+.fa-youtube::before { content: '\f167'; }
+
+/* Utility classes */
+.fa-fw { width: 1.25em; text-align: center; }
+.fa-lg { font-size: 1.333333em; line-height: 0.75em; vertical-align: -0.0667em; }
+.fa-sm { font-size: 0.875em; }
+.fa-xs { font-size: 0.75em; }
+.fa-spin { animation: fa-spin 2s infinite linear; }
+@keyframes fa-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }

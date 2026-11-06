@@ -1,0 +1,92 @@
+/* Error pages styling */
+
+/* Error icons */
+.error-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.error-icon.error-404 {
+    color: #f6c23e; /* warning color */
+}
+
+.error-icon.error-403 {
+    color: #e74a3b; /* danger color */
+}
+
+.error-icon.error-419 {
+    color: #f6c23e; /* warning color */
+}
+
+/* Error headings */
+.error-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Error descriptions */
+.error-description {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+/* Error cards */
+.error-card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.error-card-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.error-card-header.error-404 {
+    background-color: #f6c23e;
+}
+
+.error-card-header.error-403 {
+    background-color: #e74a3b;
+    color: white;
+}
+
+.error-card-header.error-419 {
+    background-color: #f8f9fa;
+}
+
+.error-card-body {
+    padding: 2rem;
+}
+
+/* Error alerts */
+.error-alert {
+    margin: 1.5rem 0;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+.error-alert.error-404 {
+    background-color: #e3f2fd;
+    border-left: 4px solid #4e73df;
+}
+
+.error-alert.error-403 {
+    background-color: #fff3cd;
+    border-left: 4px solid #f6c23e;
+}
+
+/* Error buttons */
+.error-button {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.error-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

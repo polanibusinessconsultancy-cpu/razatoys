@@ -1,0 +1,210 @@
+/**
+ * Hero Carousel - Responsive Image Optimization
+ * Styles for responsive picture elements in carousel slides
+ * Includes CLS (Cumulative Layout Shift) prevention
+ */
+
+/* Parent row - prevent layout shifts from hero carousel */
+.row.mb-5 {
+    contain: layout style paint;
+}
+
+/* Carousel wrapper container */
+.hero-slide-wrapper {
+    position: relative;
+    min-height: 500px;
+    height: 500px;
+    overflow: hidden;
+    /* Prevent layout shifts - constrain painting/layout to this element */
+    contain: layout style paint;
+}
+
+/* Responsive height for different breakpoints */
+@media (max-width: 991.98px) {
+    .hero-slide-wrapper {
+        min-height: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-slide-wrapper {
+        min-height: 350px;
+        height: 350px;
+    }
+}
+
+/* Picture element - responsive images */
+.hero-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+/* Hero slide image styling */
+.hero-slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block !important;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+/* Ensure picture tag uses full dimensions */
+.hero-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Content overlay */
+.hero-slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mask overlay */
+.hero-slide-content .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Ensure text content is readable */
+.hero-slide-content .text-white {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styling for hero slides */
+.hero-cta-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Accessibility - focus visible state */
+.hero-cta-btn:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Prevent image flickering during carousel transitions */
+.carousel-item {
+    transition: opacity 0.6s ease-in-out !important;
+}
+
+/* Ensure proper aspect ratio on all devices */
+@media (max-width: 768px) {
+    .hero-slide-wrapper {
+        min-height: 300px;
+        height: 300px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem !important;
+    }
+
+    .text-lg {
+        font-size: 1rem !important;
+    }
+
+    .hero-cta-btn {
+        padding: 0.625rem 1.5rem !important;
+        font-size: 0.875rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hero-slide-wrapper {
+        min-height: 250px;
+        height: 250px;
+    }
+
+    .display-4 {
+        font-size: 1.75rem !important;
+    }
+
+    .text-lg {
+        font-size: 0.875rem !important;
+    }
+
+    .p-5 {
+        padding: 1.5rem !important;
+    }
+
+    .hero-cta-btn {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    .mb-3 {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+
+    .mt-2 {
+        margin-top: 0.5rem !important;
+    }
+}
+
+/* Loading state - prevent layout shift (hero only) */
+.hero-slide-wrapper picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+/* Fade in animation for lazy loaded images */
+.hero-slide-img {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Optimize for print */
+@media print {
+    .hero-slide-wrapper {
+        display: none !important;
+    }
+}

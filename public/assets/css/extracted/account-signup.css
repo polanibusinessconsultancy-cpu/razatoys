@@ -1,0 +1,248 @@
+/* Account Signup Page Styles */
+
+/* Background image logic removed - handled in auth-signup-custom.css */
+
+/* Device badge - colors handled in custom css */
+.device-badge {
+    max-width: 400px;
+}
+
+/* Form icons */
+.form-icon {
+    color: #667eea;
+}
+
+/* Form inputs */
+.signup-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+}
+
+/* Password input with button */
+.password-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+    padding-right: 45px;
+    height: 50px;
+}
+
+/* Password toggle button */
+.password-toggle-btn {
+    border: none;
+    background: transparent;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+/* Password eye icon */
+.password-eye-icon {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Terms link */
+.terms-link {
+    color: #667eea;
+}
+
+/* CAPTCHA styles now consolidated in captcha.css */
+
+/* Inline CAPTCHA row fixes (duplicated here to win cascade on signup) */
+.captcha-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap !important;
+    width: 100%;
+}
+
+.captcha-container #captcha-display {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    min-width: 110px;
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.captcha-container #captcha-input {
+    display: inline-flex !important;
+    width: auto !important;
+    flex: 0 0 180px !important;
+    min-width: 160px;
+    max-width: 200px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    height: 45px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+@media (max-width: 575.98px) {
+    .captcha-container {
+        flex-wrap: wrap !important;
+    }
+
+    .captcha-container #captcha-input {
+        display: block !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+/* Force transparent header background on signup card */
+body.auth-page .card.card-plain>.card-header {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Primary gradient button */
+.btn-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-gradient-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3) !important;
+    color: white !important;
+}
+
+.btn-gradient-primary:focus,
+.btn-gradient-primary:active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+/* Modal header */
+.modal-header-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Device icon container */
+.device-icon-container {
+    width: 80px;
+    height: 80px;
+}
+
+/* Device icon */
+.device-icon {
+    font-size: 2rem;
+    color: #667eea;
+}
+
+/* Device type text */
+.device-type-text {
+    color: #667eea;
+}
+
+/* Security icon */
+.security-icon {
+    color: #667eea;
+}
+
+/* Additional form styles */
+.form-input {
+    border-color: #e3e6f0;
+    font-size: 1rem;
+}
+
+.gradient-btn {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
+    border: none;
+    color: white !important;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.39);
+    transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #6d28d9 50%, #db2777 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px 0 rgba(79, 70, 229, 0.5);
+    color: white !important;
+}
+
+.gradient-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px 0 rgba(79, 70, 229, 0.3);
+}
+
+.security-text-icon {
+    color: #667eea;
+}
+
+.modal-device-icon {
+    font-size: 2rem;
+    color: #667eea;
+}
+
+.modal-device-type {
+    color: #667eea;
+}
+
+/* Form validation styles */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+/* Form field focus effects */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Terms checkbox styling */
+.form-check-input:checked {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+/* Alert styling */
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeaa7;
+    color: #856404;
+}
+
+/* Card styling */
+.card-plain {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 15px;
+}
+
+/* Background logic removed - using premium emerald theme */
+
+
+
+/* Oblique styling removed */

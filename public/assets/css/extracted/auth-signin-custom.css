@@ -1,0 +1,206 @@
+/**
+ * Sign In Page Custom Styles - Premium Islamic Finance Theme
+ */
+
+:root {
+    --auth-primary: #064e3b;
+    /* Deep Emerald Green */
+    --auth-secondary: #059669;
+    /* Medium Emerald */
+    --auth-accent: #d1a054;
+    /* Premium Gold */
+    --auth-bg-light: #f0fdf4;
+    --auth-text-dark: #064e3b;
+    --auth-text-muted: #4b5563;
+}
+
+.page-header .card-header {
+    background: #ffffff;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2.5rem 2rem 1.5rem !important;
+    color: var(--auth-text-dark);
+    margin: 0 !important;
+    border-bottom: none;
+    text-align: center;
+}
+
+.card.card-plain {
+    margin-top: 0 !important;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+.header-logo-section {
+    padding-top: 0.5rem !important;
+    text-align: center;
+}
+
+.header-logo {
+    height: 80px !important;
+    width: 80px !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.back-home-btn {
+    color: var(--auth-primary) !important;
+    border-color: var(--auth-primary) !important;
+    background: transparent !important;
+    font-weight: 700 !important;
+    border: 2px solid var(--auth-primary) !important;
+    padding: 0.6rem 1.8rem !important;
+    border-radius: 50px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-home-btn:hover {
+    background: var(--auth-primary) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(6, 78, 59, 0.2);
+}
+
+.auth-title {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: var(--auth-text-dark);
+    margin-top: 1.5rem;
+    letter-spacing: -0.025em;
+}
+
+.auth-subtitle {
+    color: var(--auth-text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.page-header .card-body {
+    padding: 1.5rem 2.5rem 2rem !important;
+}
+
+.form-label {
+    font-weight: 700;
+    color: var(--auth-text-dark);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.auth-icon-primary {
+    color: var(--auth-accent);
+}
+
+.form-control {
+    border: 2px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #f9fafb;
+}
+
+.form-control:focus {
+    border-color: var(--auth-primary);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(6, 78, 59, 0.1);
+}
+
+.auth-submit-btn {
+    background: linear-gradient(135deg, var(--auth-primary) 0%, var(--auth-secondary) 100%) !important;
+    border: none;
+    padding: 1rem;
+    font-size: 1.125rem;
+    border-radius: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.auth-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 25px -5px rgba(6, 78, 59, 0.2);
+}
+
+.auth-bg-image {
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.captcha-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.captcha-display-box {
+    background: #f3f4f6;
+    border: 2px border #e5e7eb;
+    border-radius: 0.75rem;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--auth-primary);
+    padding: 0 1rem;
+    min-width: 100px;
+}
+
+/* Secondary signup link button at bottom */
+.auth-signup-footer-btn {
+    background: transparent !important;
+    color: var(--auth-primary) !important;
+    border: 2px solid var(--auth-primary) !important;
+    font-weight: 700 !important;
+    padding: 0.4rem 1.5rem !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease;
+}
+
+.auth-signup-footer-btn:hover {
+    background: var(--auth-primary) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.2);
+}
+
+.auth-signup-btn:hover {
+    background: var(--auth-primary);
+    color: #ffffff !important;
+}
+
+.card-footer {
+    background: #f9fafb !important;
+    border-top: 1px solid #e5e7eb !important;
+    padding: 2rem !important;
+}
+
+/* Blur overlay for background image text */
+.blur-overlay {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .auth-bg-image {
+        display: none !important;
+    }
+
+    .card.card-plain {
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .page-header {
+        background: #ffffff;
+    }
+}
